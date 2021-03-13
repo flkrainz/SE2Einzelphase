@@ -9,7 +9,8 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
-    private Button btn;
+    private Button btnSend;
+    private Button btnSort;
     private TextView outputDisplay;
     private EditText inputField;
 
@@ -18,11 +19,12 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        btn = findViewById(R.id.button);
+        btnSend = findViewById(R.id.buttonSend);
+        btnSort = findViewById(R.id.buttonSort);
         outputDisplay = findViewById(R.id.outputDisplay);
         inputField = findViewById(R.id.inputField);
 
-        btn.setOnClickListener(view -> {
+        btnSend.setOnClickListener(view -> {
             String input = inputField.getText().toString();
 
             new WorkerThread(this, input, outputDisplay).start();

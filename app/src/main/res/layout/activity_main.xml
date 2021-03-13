@@ -14,20 +14,32 @@
         android:layout_marginTop="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
-        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintBottom_toTopOf="@+id/buttonSend"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/inputField" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/buttonSend"
         android:layout_width="187dp"
         android:layout_height="66dp"
-        android:layout_marginBottom="70dp"
-        android:text="@string/button"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginBottom="68dp"
+        android:text="@string/button_send"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/buttonSort"
+        android:layout_width="187dp"
+        android:layout_height="66dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="68dp"
+        android:text="@string/button_sort"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <TextView
         android:id="@+id/textPrompt"

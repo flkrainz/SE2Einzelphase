@@ -2,5 +2,6 @@
     <string name="app_name">SE2_Einzelphase</string>
     <string name="text_prompt">Gib deine Matrikelnummer ein</string>
     <string name="input_placeholder">1234567</string>
-    <string name="button">Abschicken</string>
+    <string name="button_send">Abschicken</string>
+    <string name="button_sort">Sortieren</string>
 </resources>
